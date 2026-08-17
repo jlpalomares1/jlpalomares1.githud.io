@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Portfolio personal de Jose Luis Palomapres Pellicer.">
+<title>Jose Luis Palomapres Pellicer — Portfolio</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header class="nav">
+  <a class="brand" href="#inicio">JLP<span>.</span></a>
+  <button class="menu" aria-label="Abrir menú">☰</button>
+  <nav>
+    <a href="#sobre-mi">Sobre mí</a>
+    <a href="#habilidades">Habilidades</a>
+    <a href="#proyectos">Proyectos</a>
+    <a href="#contacto" class="nav-cta">Contacto</a>
+  </nav>
+</header>
+
+<main>
+<section id="inicio" class="hero">
+  <div class="hero-copy">
+    <p class="eyebrow">PORTFOLIO PERSONAL</p>
+    <h1>Jose Luis<br><span>Palomapres</span><br>Pellicer.</h1>
+    <p class="lead">Una presentación personal, profesional y cercana. Este espacio reúne mi perfil, mis habilidades y los proyectos que quiero compartir.</p>
+    <div class="actions">
+      <a class="button primary" href="#proyectos">Ver proyectos ↗</a>
+      <a class="button secondary" href="#contacto">Contactar</a>
+    </div>
+  </div>
+  <div class="hero-card">
+    <div class="orb"></div>
+    <div class="card-content">
+      <span>JLP</span>
+      <p>Personal<br>Portfolio</p>
+    </div>
+  </div>
+</section>
+
+<section id="sobre-mi" class="section split">
+  <div>
+    <p class="eyebrow">01 — SOBRE MÍ</p>
+    <h2>Conoce un poco<br>más sobre mí.</h2>
+  </div>
+  <div class="text">
+    <p>Hola, soy <strong>Jose Luis Palomapres Pellicer</strong>. Bienvenido a mi portfolio personal.</p>
+    <p>He preparado esta web como un espacio flexible donde presentar quién soy, qué sé hacer y los proyectos que vaya desarrollando. El contenido puede personalizarse fácilmente con tu experiencia, estudios, profesión y enlaces.</p>
+  </div>
+</section>
+
+<section id="habilidades" class="section">
+  <p class="eyebrow">02 — HABILIDADES</p>
+  <h2>Lo que puedo aportar.</h2>
+  <div class="skills">
+    <article><span>01</span><h3>Creatividad</h3><p>Ideas claras, soluciones originales y atención al detalle.</p></article>
+    <article><span>02</span><h3>Organización</h3><p>Trabajo estructurado para convertir objetivos en resultados.</p></article>
+    <article><span>03</span><h3>Aprendizaje</h3><p>Curiosidad constante y capacidad para adaptarme a nuevos retos.</p></article>
+    <article><span>04</span><h3>Comunicación</h3><p>Una forma directa y cercana de colaborar y compartir ideas.</p></article>
+  </div>
+</section>
+
+<section id="proyectos" class="section projects">
+  <div class="section-head">
+    <div><p class="eyebrow">03 — PROYECTOS</p><h2>Proyectos destacados.</h2></div>
+    <p class="muted">Una selección que podrás sustituir por tus proyectos reales.</p>
+  </div>
+  <div class="project-grid">
+    <article class="project featured"><div class="project-num">01</div><div><p class="tag">PROYECTO PERSONAL</p><h3>Mi portfolio</h3><p>Diseño y desarrollo de una identidad digital personal, moderna y adaptable.</p></div><a href="#contacto">Ver más ↗</a></article>
+    <article class="project"><div class="project-num">02</div><div><p class="tag">EN DESARROLLO</p><h3>Proyecto 02</h3><p>Añade aquí una descripción breve de tu próximo proyecto.</p></div><a href="#contacto">Ver más ↗</a></article>
+    <article class="project"><div class="project-num">03</div><div><p class="tag">EN DESARROLLO</p><h3>Proyecto 03</h3><p>Presenta aquí otro trabajo, iniciativa o experiencia relevante.</p></div><a href="#contacto">Ver más ↗</a></article>
+  </div>
+</section>
+
+<section id="contacto" class="contact">
+  <p class="eyebrow">04 — CONTACTO</p>
+  <h2>¿Hablamos?</h2>
+  <p>Si quieres contactar conmigo, puedes añadir aquí tu correo y tus redes profesionales.</p>
+  <a class="contact-mail" href="mailto:tuemail@ejemplo.com">tuemail@ejemplo.com ↗</a>
+</section>
+</main>
+
+<footer>
+  <span>© 2026 Jose Luis Palomapres Pellicer</span>
+  <span>Hecho con intención.</span>
+</footer>
+<script>
+const menu=document.querySelector('.menu'), nav=document.querySelector('.nav nav');
+menu.addEventListener('click',()=>nav.classList.toggle('open'));
+document.querySelectorAll('nav a').forEach(a=>a.addEventListener('click',()=>nav.classList.remove('open')));
+</script>
+</body>
+</html>
